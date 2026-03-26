@@ -4,20 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Netflix</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-        <h1>Quem está assistindo?</h1>
-        <div class="profiles">
-            <div class="profile">
-                <img src="/Netflix/Assets/perfil1.png" alt="Perfil 1">
-                <p>Perfil 1</p>
-            </div>
-            <div class="profile">
-                <img src="/Netflix/Assets/perfil2.png" alt="Perfil 2">
-                <p>Perfil 2</p>
-            </div>
-        </div>
+        <h1 id="titulo-selecao-perfil">Quem está assistindo?</h1>
+        <section class="profiles" aria-labelledby="titulo-selecao-perfil">
+            <ul class="profiles-list">
+                <li class="profile">
+                    <figure>
+                        <img src="/Netflix/Assets/perfil1.png" alt="Ícone do Perfil 1 com um personagem em estilo cartoon com olhos de botão">
+                        <figcaption>Perfil 1</figcaption>
+                    </figure>
+                </li>
+                <li class="profile">
+                    <figure>
+                        <img src="/Netflix/Assets/perfil2.png" alt="Ícone do Perfil 2 com um boné azul e cinza">
+                        <figcaption>Perfil 2</figcaption>
+                    </figure>
+                </li>
+                <li class="profile">
+                    <figure>
+                        <img src="/Netflix/Assets/perfil2.png" alt="Ícone do Perfil 3 com um boné azul e cinza">
+                        <figcaption>Perfil 3</figcaption>
+                    </figure>
+                </li>
+                <li class="profile">
+                    <figure>
+                        <img src="/Netflix/Assets/perfil2.png" alt="Ícone do Perfil 4 com um boné azul e cinza">
+                        <figcaption>Perfil 4</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
     </main>
 </body>
 </html>
