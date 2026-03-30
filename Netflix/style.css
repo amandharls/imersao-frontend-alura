@@ -190,7 +190,7 @@ main > header {
   justify-content: center;
 }
 
-/* botão = ação “escolher perfil”; nome acessível via texto visível */
+/* link do card: avatar + nome; um único destino para toda a área clicável */
 .profile-card {
   margin: 0;
   padding: 0.25rem;
@@ -200,6 +200,7 @@ main > header {
   background: none;
   font: inherit;
   color: inherit;
+  text-decoration: none;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -207,6 +208,14 @@ main > header {
   text-align: center;
   -webkit-tap-highlight-color: transparent;
   transition: transform 0.2s ease;
+}
+
+.profile-card:visited {
+  color: inherit;
+}
+
+.profile-card:visited .profile-name {
+  color: var(--nf-gray);
 }
 
 .profile-card:focus {
